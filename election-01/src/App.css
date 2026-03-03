@@ -1,0 +1,40 @@
+/* Remove default body margin */
+body {
+  margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Navbar overlay */
+.navbar {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent !important;
+  padding: 20px 40px;
+}
+
+/* Slider full screen */
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Caption center */
+.carousel-caption {
+  bottom: 40%;
+}

@@ -1,0 +1,107 @@
+.footer-wrapper{
+     min-height: 50vh;
+     background: linear-gradient(rgba(0, 28, 90, 0.9), rgba(0, 28, 90, 0.9)),
+     url("https://images.unsplash.com/photo-1520975916090-3105956dac38")
+      center/cover no-repeat;
+      margin-top: 100px;
+}
+
+/* Social icon */
+.electian-foot{
+      padding-left: 100px;
+      padding-top: 40px;
+}
+
+.electian-foot img{
+      padding-bottom: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+}
+
+.electian-foot p{
+      font-size: 15px;
+}
+
+.social-icon{
+      list-style: none;
+}
+
+.social-icon i{
+      color: aliceblue;
+      font-size: 25px;
+      padding: 2px;
+}
+
+.social-icon i:hover{
+      color: brown;
+      transition: 0.9s;
+}
+
+/* Nav links */
+.links-nav{
+      color: aliceblue;
+      padding-top: 40px;
+}
+
+.links-nav h3{
+      margin-left: 25px;
+      padding-bottom: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+}
+
+.links-nav li{
+      list-style: none;
+      padding-bottom: 8px;
+      font-size: 15px;
+}
+
+/* contact us */
+.contact-us{
+      color: aliceblue;
+      padding-top: 40px;
+}
+
+.contact-us h3{
+      margin-left: 30px;
+      padding-bottom: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+}
+
+.contact-us li{
+      list-style: none;
+      padding: 5px;
+      font-size: 15px;
+}
+
+.contact-us li i{
+      padding-right: 25px;
+}
+
+.num-span{
+      margin-left: 25px;
+}
+
+/* sletter */
+.sletter{
+      color: aliceblue;
+      padding-top: 40px;
+      padding-right: 50px;
+      font-size: 15px;
+}
+
+.sletter h3{
+      padding-bottom: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+}
+
+/* copyright */
+.copyright p{
+      font-size: 12px;
+}

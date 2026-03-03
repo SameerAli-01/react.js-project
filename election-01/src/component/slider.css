@@ -1,0 +1,20 @@
+.carousel-control-prev,
+.carousel-control-next {
+    background: none !important;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.carousel,
+.carousel-item,
+.carousel-item img {
+  height: 100vh;
+}
