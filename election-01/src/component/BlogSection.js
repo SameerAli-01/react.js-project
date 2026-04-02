@@ -1,19 +1,28 @@
 import React from "react";
-import BlogCard from "../component/BlogCard.js";
-import blogData from "../component/blogData.js";
+import BlogCard from "../component/BlogCard";
+import blogData from "../component/blogData";
+import "./BlogSection.css";
 
 const BlogSection = () => {
   return (
-    <div className="container py-5">
-      <div className="text-center mb-5">
-        <p className="text-danger">- Blog Post -</p>
-        <h2 className="text-primary-emphasis">Awesome Blog Post & Article.</h2>
-      </div>
+    <div className="blog-section py-5">
+      <div className="container">
+        
+        {/* Heading */}
+        <div className="text-center mb-5">
+          <p className="section-subtitle">- Blog Post -</p>
+          <h2 className="section-title">
+            Awesome Blog Post & Article.
+          </h2>
+        </div>
 
-      <div className="row">
-        {blogData.map((blog) => (
-          <BlogCard key={blog.id} blog={blog} />
-        ))}
+        {/* Cards */}
+        <div className="row g-4">
+          {blogData.map((blog) => (
+            <BlogCard key={blog.id} blog={blog} />
+          ))}
+        </div>
+
       </div>
     </div>
   );

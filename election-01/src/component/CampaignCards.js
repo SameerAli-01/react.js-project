@@ -92,7 +92,7 @@ const CampaignCards = () => {
                     dummy text ever scrambled type specimen
                   </p>
 
-                  <button className="btn btn-outline-danger">
+                  <button className="btn-card">
                     DETAILS
                   </button>
 

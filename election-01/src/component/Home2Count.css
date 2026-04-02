@@ -1,0 +1,58 @@
+/* Section main container */
+.home2-count-section {
+  position: relative;
+  padding: 80px 0;
+  /* Image wala gradient color combination */
+  background: linear-gradient(90deg, #1e3a8a 0%, #7e22ce 50%, #b91c1c 100%);
+  color: white;
+  overflow: hidden;
+}
+
+/* Optional: Background flag texture overlay */
+.home2-count-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://path-to-your-flag-image.jpg'); /* Flag image URL yahan dalen */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Number Styling */
+.counter-number {
+  font-size: clamp(0.5rem, 5vw, 4rem); /* Responsive font size */
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+/* Label Styling */
+.counter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0;
+}
+
+/* Bootstrap gap fixes and alignment */
+@media (max-width: 576px) {
+  .counter-number {
+    font-size: 2.2rem;
+  }
+  .counter-label {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+}

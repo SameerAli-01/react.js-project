@@ -2,38 +2,45 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from './pages/home.js'
+import About from './component/AboutBanner.js'
+import Contact from './pages/contact.js'
 
+import HomePage2 from './component/HomePage2.js';
+import HomePage3 from './component/homepage3/HomePage3.js';
+import HomePage4 from './component/homepage4/HomePage4.js';
 
-// import Header from './component/header.js';
-// import Slider from './component/slider.js';
-import CampaignCards from './component/CampaignCards.js'
-import About from './pages/about.js';
-import CampaignSection from './component/CampaignSection.js'
-
-
-import BlogSection from './component/BlogSection.js'
+import ScrollToTop from './component/ScrollToTop.js';
 import FooterPage from './component/footer.js'
-// import BlogCard from './component/BlogCard.js'
 
 function App() {
     return(
         <>
 
     <BrowserRouter>
+
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/About" element={<About />} />
+
+         {/* Home page 2  */}
+         <Route path="/HomePage2" element={<HomePage2 />} />
+
+          {/* Home page 3  */}
+         <Route path="/HomePage3" element={<HomePage3 />} />
+
+          {/* Home page 4  */}
+         <Route path="/HomePage4" element={<HomePage4 />} />
+
       </Routes>
+
+      <ScrollToTop />
+      
     </BrowserRouter>
- 
-        <CampaignCards />
-        <About />
-        <CampaignSection />
 
+   
+    <FooterPage />
 
-        <BlogSection />
-        <FooterPage />
-
-        {/* <BlogCard /> */}
         
         
         </>

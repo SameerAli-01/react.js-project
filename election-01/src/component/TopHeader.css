@@ -1,0 +1,108 @@
+.container-tophead{
+    background-color: rgb(11, 11, 46);
+    color: #fff;
+    padding: 8px 35px;
+    font-size: 14px;
+}
+
+/* UL Reset */
+.contact-tophead ul,
+.Social-Contant ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* List Style */
+.contact-tophead li,
+.Social-Contant li{ 
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Flex Gap */
+.contact-div{
+    gap: 20px;
+}
+
+.Social-div{
+    gap: 15px;
+    align-items: center;
+}
+
+/* Hover Effect */
+.Social-div li:hover{
+    color: rgb(187, 72, 72);
+    cursor: pointer;
+}
+
+/* Icons spacing */
+.contact-tophead i,
+.Social-Contant i{
+    margin-right: 5px;
+}
+
+.label{
+    font-size: 16px !important;
+    color: #fff !important;
+}
+
+.label:hover{
+    color: rgb(187, 72, 72) !important;
+}
+
+/* MOBILE */
+@media (max-width: 576px){
+
+    .container-tophead{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+        gap: 8px;
+    }
+
+    .contact-div{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Social-div{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .label{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}
+
+/*TABLET */
+@media (max-width: 992px){
+
+    .container-tophead{
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .contact-div,
+    .Social-div{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+}
+
+/* DESKTOP */
+@media (min-width: 1200px){
+
+    .container-tophead{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+}

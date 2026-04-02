@@ -1,107 +1,103 @@
-.footer-wrapper{
-     min-height: 50vh;
-     background: linear-gradient(rgba(0, 28, 90, 0.9), rgba(0, 28, 90, 0.9)),
-     url("https://images.unsplash.com/photo-1520975916090-3105956dac38")
-      center/cover no-repeat;
-      margin-top: 100px;
+/* Main Container with Background Image and Dark Overlay */
+.footer-section {
+    position: relative;
+    color: #fff;
+    /* Aap yahan apni image lagayein */
+    background: linear-gradient(rgba(8, 22, 60, 0.94), rgba(8, 22, 60, 0.94)), 
+                url('https://images.unsplash.com/photo-1730808822974-b21a29d64055?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Social icon */
-.electian-foot{
-      padding-left: 100px;
-      padding-top: 40px;
+/* Top Multi-color Strip */
+.top-border-strip { height: 5px; width: 100%; }
+.strip-item { flex: 1; }
+.bg-l-blue { background-color: #7c96e8; }
+.bg-blue { background-color: #2a52be; }
+.bg-red { background-color: #ff3b3b; }
+.bg-pink { background-color: #f8c2c2; }
+.bg-l-pink { background-color: #ffeff1; }
+
+/* Logo Styles */
+.logo-text { font-size: 32px; font-weight: 800; }
+.logo-text span { color: #ff3b3b; }
+.logo-icon-box {
+    width: 35px;
+    height: 35px;
+    border: 3px solid #ff3b3b;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner-gear {
+    width: 15px; height: 15px; background: #ff3b3b; border-radius: 50%;
 }
 
-.electian-foot img{
-      padding-bottom: 10px;
-      font-size: 20px;
-      font-weight: 600;
-      text-transform: uppercase;
+/* Text & Content */
+.about-desc { font-size: 14.5px; color: #cbd5e0; line-height: 1.6; }
+.footer-title { font-size: 18px; font-weight: 700; margin-bottom: 30px; letter-spacing: 1px; }
+
+/* Social Icons (Square boxes) */
+.social-links a {
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.social-links a:hover { background: #ff3b3b; border-color: #ff3b3b; }
+
+/* Quick Links */
+.quick-links li { margin-bottom: 12px; }
+.quick-links a { color: #cbd5e0; text-decoration: none; transition: 0.3s; }
+.quick-links a:hover { color: #fff; padding-left: 5px; }
+
+/* Contact Section */
+.c-icon { font-size: 22px; color: #fff; flex-shrink: 0; }
+
+/* Newsletter */
+.newsletter-wrapper {
+    background: #fff;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.news-input {
+    border: none;
+    flex: 1;
+    padding: 8px 12px;
+    outline: none;
+    color: #333;
+}
+.news-btn {
+    background: #e91e63;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.news-btn:hover { background: #d81b60; }
+
+/* Copyright Bar */
+.footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.copy-text { color: #94a3b8; font-size: 14px; }
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991px) {
+    .ps-lg-5 { padding-left: 12px !important; }
 }
 
-.electian-foot p{
-      font-size: 15px;
-}
-
-.social-icon{
-      list-style: none;
-}
-
-.social-icon i{
-      color: aliceblue;
-      font-size: 25px;
-      padding: 2px;
-}
-
-.social-icon i:hover{
-      color: brown;
-      transition: 0.9s;
-}
-
-/* Nav links */
-.links-nav{
-      color: aliceblue;
-      padding-top: 40px;
-}
-
-.links-nav h3{
-      margin-left: 25px;
-      padding-bottom: 10px;
-      font-size: 20px;
-      font-weight: 600;
-      text-transform: uppercase;
-}
-
-.links-nav li{
-      list-style: none;
-      padding-bottom: 8px;
-      font-size: 15px;
-}
-
-/* contact us */
-.contact-us{
-      color: aliceblue;
-      padding-top: 40px;
-}
-
-.contact-us h3{
-      margin-left: 30px;
-      padding-bottom: 10px;
-      font-size: 20px;
-      font-weight: 600;
-      text-transform: uppercase;
-}
-
-.contact-us li{
-      list-style: none;
-      padding: 5px;
-      font-size: 15px;
-}
-
-.contact-us li i{
-      padding-right: 25px;
-}
-
-.num-span{
-      margin-left: 25px;
-}
-
-/* sletter */
-.sletter{
-      color: aliceblue;
-      padding-top: 40px;
-      padding-right: 50px;
-      font-size: 15px;
-}
-
-.sletter h3{
-      padding-bottom: 10px;
-      font-size: 20px;
-      font-weight: 600;
-      text-transform: uppercase;
-}
-
-/* copyright */
-.copyright p{
-      font-size: 12px;
+@media (max-width: 768px) {
+    .footer-title { margin-top: 25px; }
+    .footer-content { text-align: left; }
 }

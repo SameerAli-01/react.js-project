@@ -1,0 +1,35 @@
+.btn-scroll-fixed {
+  position: fixed; 
+  bottom: 10px; 
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(135deg, #f35d78 0%, #e63946 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+
+.btn-scroll-fixed:hover {
+  background: #e63946;
+  transform: translateY(-5px); /* Hover karne par thoda upar uthega */
+  box-shadow: 0 6px 15px rgba(230, 57, 70, 0.5);
+}
+
+/* Mobile ke liye size thoda chota */
+@media (max-width: 768px) {
+  .btn-scroll-fixed {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}

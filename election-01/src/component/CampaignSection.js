@@ -1,17 +1,20 @@
 import React from "react";
 import "./CampaignSection.css";
-
-import DonetImage from '../images/donate.jpg.jpeg'
+import DonetImage from "../images/donate.jpg.jpeg";
 
 const CampaignSection = () => {
   return (
-    <div className="campaign-wrapper d-flex align-items-center">
-      <div className="container">
+    <div className="campaign-wrapper">
+
+      {/* Overlay */}
+      <div className="overlay"></div>
+
+      <div className="container-s">
         <div className="card campaign-card border-0 shadow-lg">
           <div className="row g-0 align-items-center">
 
             {/* Left Image */}
-            <div className="col-md-5 text-center p-4">
+            <div className="col-lg-5 col-md-6 text-center p-4">
               <img
                 src={DonetImage}
                 alt="campaign"
@@ -20,8 +23,8 @@ const CampaignSection = () => {
             </div>
 
             {/* Right Content */}
-            <div className="col-md-7 p-4">
-              <p className="text-danger  small mb-2 letter-space">
+            <div className="col-lg-7 col-md-6 p-4 text-content">
+              <p className="text-danger small mb-2 letter-space">
                 DONATE TODAY!
               </p>
 
@@ -30,20 +33,20 @@ const CampaignSection = () => {
               </h2>
 
               {/* Progress Bar */}
-              <div className="progress mb-2" style={{ height: "6px" }}>
+              <div className="progress mb-2 progress-custom">
                 <div
-                  className="progress-bar bg-gradient"
+                  className="progress-bar progress-bar-custom"
                   role="progressbar"
                   style={{ width: "75%" }}
                 ></div>
               </div>
 
-              <div className="d-flex justify-content-between mb-4 small">
+              <div className="d-flex justify-content-between mb-4 small info-row">
                 <span>Goal: $85,000</span>
-                <span className="percent">Raised: $74,000</span>
+                <span>Raised: $74,000</span>
               </div>
 
-              <button className="btn text-dark px-4 py-2">
+              <button className="btn-c px-4 py-2">
                 DONATE NOW
               </button>
             </div>

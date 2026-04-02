@@ -1,0 +1,108 @@
+.contact-banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contact-banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* overlay */
+}
+
+.contact-banner div {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-banner h1 {
+  font-size: 40px;
+}
+
+.contact-banner p {
+  font-size: 16px;
+}
+
+/* contact section */
+.contact-card {
+  background: white;
+  padding: 30px 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 24px;
+  color: rgb(74, 74, 128);
+  margin-bottom: 15px;
+}
+
+.contact-card h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: rgb(38, 38, 70);
+}
+
+.contact-card p {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* form page */
+.contact-section{
+background:#f7f7f7;
+}
+
+.contact-box{
+background:white;
+border-radius:6px;
+box-shadow:0 0 20px rgba(0,0,0,0.05);
+}
+
+.form-control,
+.form-select{
+height:50px;
+border-radius:4px;
+}
+
+textarea.form-control{
+height:auto;
+}
+
+.submit-btn{
+border: none;
+padding:12px 35px;
+color:white;
+border-radius: 2px;
+background:linear-gradient(90deg,#3a5bff,#ff2e63);
+}
+
+.submit-btn:hover{
+  background:linear-gradient(90deg,red, rgb(153, 16, 130));
+}
+
+/* map-section */
+
+.map-section{
+  position: relative;
+  top: 106px;
+}
+
+
+
+
+
+

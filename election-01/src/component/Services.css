@@ -1,0 +1,78 @@
+.contant-service{
+    padding-bottom: 50px;
+}
+
+.contant-service p{
+    color: rgb(245, 26, 45);
+    font-size: 14px;
+}
+
+.contant-service h4{
+    color: rgb(6, 19, 92);
+    font-weight: 700;
+}
+
+.custom-card {
+  position: relative;
+  height: 350px;
+  overflow: hidden; /* Clips the sliding elements */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Top Slide Overlay --- */
+.overlay-top {
+  position: absolute;
+  top: -100%; /* Hidden above */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.9) 0%, rgba(255, 82, 82, 0.9) 100%);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: top 0.5s ease-in-out;
+  color: white;
+  z-index: 2;
+}
+
+.custom-card:hover .overlay-top {
+  top: 0; /* Slide down */
+}
+
+/* --- Left Slide Button --- */
+.overlay-button {
+  position: absolute;
+  bottom: 20px;
+  left: -100%; /* Hidden to the left */
+  width: 80%;
+  transition: left 0.5s ease-in-out;
+  z-index: 3;
+}
+
+.custom-card:hover .overlay-button {
+  left: 10%; /* Slide in */
+}
+
+.btn-label {
+  width: 100%;
+  background: white;
+  color: #1e3c72;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.overlay-top h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}

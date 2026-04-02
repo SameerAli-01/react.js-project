@@ -1,0 +1,43 @@
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+/* Overlay (hidden by default) */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 123, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: 0.4s ease;
+}
+
+.overlay-content {
+  color: #fff;
+  text-align: center;
+}
+
+/* Hover Effect (like 2nd card) */
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-card:hover .overlay {
+  opacity: 1;
+  transform: scale(1);
+}

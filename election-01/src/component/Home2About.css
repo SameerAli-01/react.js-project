@@ -1,0 +1,44 @@
+.about-section {
+  background: #f8f9fa;
+}
+
+.home2about-img img{
+  height: 80vh;
+  width: 70vh;
+}
+
+.home2about-tag {
+  color: #dc3545;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.home2about-title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #0d1b4c;
+}
+.home2about-title span{
+  color: #dc3545;
+}
+
+.home2about-text {
+  color: #6c757d;
+  line-height: 1.8;
+}
+
+.home2about-btn{
+  background-image: linear-gradient(to right,  rgb(4, 0, 255), rgb(187, 76, 76),  rgb(255, 0, 200));
+  color: aliceblue;
+  margin-right: 100px;
+  border: none !important;
+  border-radius: 6px;
+  padding: 10px 8px 10px 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.home2about-btn:hover{
+  background-image: linear-gradient(to right, red, rgb(4, 0, 255), rgb(187, 76, 76));
+}

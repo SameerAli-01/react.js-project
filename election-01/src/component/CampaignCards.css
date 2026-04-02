@@ -1,8 +1,7 @@
 .slider-wrapper {
   position: relative;
   overflow: hidden;
-  background: #f5f5f5;
-  /* padding: 70px 0; */
+  background: #fff;
 }
 
 .slider-track {
@@ -16,11 +15,12 @@
 
 .card {
   border: none;
-  padding: 40px 25px;
   border-radius: 4px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
   background: white;
+  height: 350px;
+  width: 380px;
 }
 
 .card h5 {
@@ -59,18 +59,20 @@
 }
 
 /* Button */
-.btn-outline-danger {
+.btn-card {
   border: 1px solid #e63946;
+  background-color: #fff;
   color: #0b1c55;
-  /* padding: 8px 25px; */
   font-weight: 600;
   font-size: 13px;
   transition: 0.3s;
   width: 100px;
   margin-left: 100px;
+  padding: 7px;
+  border-radius: 8px;
 }
 
-.btn-outline-danger:hover {
+.btn-card:hover {
   background: #e63946;
   color: white;
 }

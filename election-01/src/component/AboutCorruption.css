@@ -1,0 +1,76 @@
+.about-container{
+    padding-left: 22vh;
+    padding-right: 22vh;
+}
+
+/* Main Section */
+.about-corruption{
+    height: 350px;
+    border-radius: 5px;
+    position:relative;
+    overflow:hidden;
+
+     background-image: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+    background-size:cover;
+    background-position:center;
+    padding: 50px;
+} 
+
+
+/* Inner Content */
+.about-inner{
+    height:100%;
+    padding:0 120px;
+    color:white;
+    position:relative;
+    background-color: rgb(86, 86, 173);
+    opacity: 0.9;
+}
+
+
+/* Left Text Area */
+.about-text-page{
+    position:relative;
+}
+
+
+/* Red Curved Shape */
+.about-text-page::before{
+    content:"";
+    position:absolute;
+    left: -120px;
+    top: -64px;
+    width: 400px;
+    height: 249px;
+    border-radius: 0 200px 80px 0;
+    z-index: -1;
+    background-color: blueviolet;
+}
+
+
+/* Small Text */
+
+.small-text{
+    color:#00f0c0;
+    letter-spacing:2px;
+    font-size:14px;
+    font-weight:600;
+}
+
+
+/* Heading */
+
+.about-text h2{
+    font-size:36px;
+    font-weight:700;
+    margin-top:10px;
+}
+
+
+/* Button */
+
+.call-btn{
+    padding:10px 28px;
+    border-radius:6px;
+    font-weight:500;
+}
